@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+
+<body>
+<h1>Quotes Found</h1>
+<hr>
+<div id="quotesContainer">
+<% for(i of quotes) { %>
+    <span class="quote"><%= i.quote %></span>
+    <div class="author">-<em>
+    <a href="#" class="authorName" id="<%=i.authorId%>">
+        <%= i.firstName%> <%=i.lastName %>
+    </a></div>
+    </em> <br><br>
+<% } %>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="authorModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Author Information</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="authorHeader"></div>
+                <div id="authorInfo"></div>
+                <div id="authorBio"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer.ejs") %>
+
+<script src="/js/scripts.js"></script>
+</body>
+</html>

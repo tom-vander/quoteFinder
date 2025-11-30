@@ -1,0 +1,97 @@
+html {
+    background-color: #78b1cb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    padding: 30px;
+    margin: 20px;
+    min-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    color: #39707e;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 60px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    width: 700px;
+    padding: 10px;
+    outline: #9dadb7 solid 2px;
+}
+
+form button {
+    background-color: #dee1e7;
+    width: 250px;
+
+}
+
+form input, form select {
+    background-color: rgba(255, 255, 255, 0.78);
+    flex-grow: 4;
+    max-width: 200px;
+    text-align: center;
+}
+
+form select {
+    padding-block: 2px;
+}
+
+#quotesContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    justify-self: center;
+    background-color: rgba(255, 255, 255, 0.78);
+    padding: 20px;
+}
+
+#forms {
+    justify-self: center;
+}
+
+.quote {
+    font-size: 20px;
+}
+
+.author {
+}
+
+.authorName {
+    color: steelblue;
+}
+
+.authorName:hover {
+    font-size: 18px;
+    color: #39707e;
+}
+
+#authorInfo{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+#authorInfo .columnInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+}
+
+#authorBio {
+    padding-top: 15px;
+}
